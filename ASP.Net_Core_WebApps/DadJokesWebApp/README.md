@@ -25,4 +25,9 @@ In its simplest form, this is a web app to display dad jokes.
 * **Create Database:**
   * We shall now create the database using migrations. In Package Manager Console, type `update-database` and hit enter.\
     The Entity ORM (Object relation mapper) does the magic of creating all the tables for us.\
-	![](resources/createDatabase.png)
+	  
+	  ![](resources/createDatabase.png)
+
+* **Add items to Navigation Bar:**
+  * Edit [`DadJokesWebApp/Views/Shared/_Layout.cshtml`](Views/Shared/_Layout.cshtml) to add items to NavBar.\
+    **Note:** Added asp-action as Index since that is referenced by Jokes Controller.
