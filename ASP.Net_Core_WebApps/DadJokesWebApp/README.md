@@ -25,9 +25,22 @@ In its simplest form, this is a web app to display dad jokes.
 * **Create Database:**
   * We shall now create the database using migrations. In Package Manager Console, type `update-database` and hit enter.\
     The Entity ORM (Object relation mapper) does the magic of creating all the tables for us.\
-	  
-	  ![](resources/createDatabase.png)
+	![](resources/createDatabase.PNG)
 
-* **Add items to Navigation Bar:**
-  * Edit [`DadJokesWebApp/Views/Shared/_Layout.cshtml`](Views/Shared/_Layout.cshtml) to add items to NavBar.\
+* **Add Jokes to Navigation Bar:**
+  * Edit [`DadJokesWebApp/Views/Shared/_Layout.cshtml`](Views/Shared/_Layout.cshtml) to add Jokes to NavBar.\
     **Note:** Added asp-action as Index since that is referenced by Jokes Controller.
+
+* **Add Search Functionality for Jokes:**
+  * Edit [`DadJokesWebApp/Views/Shared/_Layout.cshtml`](Views/Shared/_Layout.cshtml) to add Search to NavBar.
+  * Update [`Controllers/JokesController.cs`](Controllers/JokesController.cs) to handle Search functionality.
+  * Create a corresponding View for Search Functionality.
+    * Just right click ShowSearchForm method in [`Controllers/JokesController.cs`](Controllers/JokesController.cs) and select Add Controller.
+	* The closest view would be that of Create since it accepts data (search also accepts data, as in what to search for). We'd need to edit the generated view though to reflect search functionality.
+	* We're not creating a new Joke so model in top line of ShowSearchForm.cshtml was deleted. 
+	* Last three lines for validating entered jokes are deleted as they're not required.
+	* Update [`Controllers/JokesController.cs`](Controllers/JokesController.cs) to add functionality to return search results.
+
+	
+	
+  
