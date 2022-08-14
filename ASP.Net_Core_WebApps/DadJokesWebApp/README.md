@@ -41,6 +41,7 @@ In its simplest form, this is a web app to display dad jokes.
 	* Last three lines for validating entered jokes are deleted as they're not required.
 	* Update [`Controllers/JokesController.cs`](Controllers/JokesController.cs) to add functionality to return search results.
 
-	
+* **Hide answer from index view:**
+  * Edit [`DadJokesWebApp/Views/Home/Index.cshtml`](Views/Home/Index.cshtml) to hide answer.
 	
   
