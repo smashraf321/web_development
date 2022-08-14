@@ -43,5 +43,8 @@ In its simplest form, this is a web app to display dad jokes.
 
 * **Hide answer from index view:**
   * Edit [`DadJokesWebApp/Views/Home/Index.cshtml`](Views/Home/Index.cshtml) to hide answer.
+  
+* **Implement Authorization:**
+  * Only allow logged in users to Create, Update and/or delete jokes. Add an `[Authorize]` decorator above Create, Update and/or delete handler methods and import `Microsoft.AspNetCore.Authorization` to achieve this.
 	
   
